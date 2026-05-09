@@ -1,5 +1,6 @@
 # Local environment
 .DS_Store
+.idea/
 .venv/
 
 # Large artifacts should live on Hugging Face, not in this landing repo.
@@ -16,4 +17,3 @@ checkpoints/
 outputs/
 runs/
 logs/
-

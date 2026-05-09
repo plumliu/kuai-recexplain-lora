@@ -54,6 +54,10 @@ Held-out evaluations show improvements over the SFT-only model:
 
 See [docs/evaluation.md](docs/evaluation.md) for the evaluation summary.
 
+## Examples
+
+The [examples](examples) directory contains two small public KuaiRand-27K item records selected from the high-frequency item universe, plus a minimal prompt/output illustration. These examples are meant to show input shape and response style only; they are not released training records, teacher judge outputs, or evaluation samples.
+
 ## Why Only A Landing Repo?
 
 The full training workflow depends on large KuaiRand artifacts, teacher API outputs, intermediate embeddings, LoRA checkpoints, and AutoDL run logs. Those artifacts are not redistributed here.

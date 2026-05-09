@@ -1,0 +1,18 @@
+{
+  "task": "user_interest_summary",
+  "language": "zh",
+  "note": "This is a minimal public-data example. It is not a released training sample and does not contain teacher labels.",
+  "user_history": [
+    {
+      "video_id": 21,
+      "semantic_id": "<SID_0_106> <SID_1_223> <SID_2_64>",
+      "item_text": "类目路径: 汽车 > 玩车\n标题/描述: 小伙花一年时间用泥造出布加迪，但仅开了一天却直接拆了\n补充主题标签: 布加迪威龙 / 造车 / 手工"
+    },
+    {
+      "video_id": 25,
+      "semantic_id": "<SID_0_172> <SID_1_72> <SID_2_174>",
+      "item_text": "类目路径: 游戏 > 多人在线战术竞技游戏(MOBA)\n标题/描述: 峡谷回合制，女枪vs大嘴，谁厉害\n封面文字: 峡谷回合制 女枪 vs 大嘴"
+    }
+  ],
+  "instruction": "请根据用户最近观看的视频，概括用户可能的兴趣偏好。回答要具体、简洁，并尽量基于视频内容本身。"
+}
