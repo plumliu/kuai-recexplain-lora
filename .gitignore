@@ -1,0 +1,19 @@
+# Local environment
+.DS_Store
+.venv/
+
+# Large artifacts should live on Hugging Face, not in this landing repo.
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.parquet
+*.npy
+*.npz
+data/
+checkpoints/
+outputs/
+runs/
+logs/
+
