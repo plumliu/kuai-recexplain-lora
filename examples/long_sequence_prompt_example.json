@@ -1,0 +1,84 @@
+{
+  "task": "candidate_recommendation_explanation",
+  "language": "zh",
+  "note": "This example uses real public KuaiRand-27K item records, but the sequence itself is synthetic and does not correspond to a released user trajectory.",
+  "user_history": [
+    {
+      "position": 1,
+      "video_id": 2444005,
+      "category_path": "游戏 > 吃鸡游戏",
+      "semantic_id": "<SID_0_20> <SID_1_181> <SID_2_2>",
+      "item_text": "类目路径: 游戏 > 吃鸡游戏\n标题/描述: 谁会拒绝一个会钻树的队友。#和平精英 这个姿势也太好笑了哈哈哈哈哈哈哈\n补充主题标签: 和平精英"
+    },
+    {
+      "position": 2,
+      "video_id": 1554948,
+      "category_path": "游戏 > 吃鸡游戏",
+      "semantic_id": "<SID_0_20> <SID_1_159> <SID_2_247>",
+      "item_text": "类目路径: 游戏 > 吃鸡游戏\n标题/描述: 就离谱啊,蹦蹦车居然把我送到队友那里去了!\n封面文字: 蹦蹦车居然无人驾驶走了"
+    },
+    {
+      "position": 3,
+      "video_id": 1253309,
+      "category_path": "游戏 > 吃鸡游戏",
+      "semantic_id": "<SID_0_59> <SID_1_78> <SID_2_187>",
+      "item_text": "类目路径: 游戏 > 吃鸡游戏\n标题/描述: 惊现蹦蹦车自动驾驶!\n封面文字: 蹦蹦车自动驾驶"
+    },
+    {
+      "position": 4,
+      "video_id": 2090103,
+      "category_path": "游戏 > 吃鸡游戏",
+      "semantic_id": "<SID_0_7> <SID_1_79> <SID_2_171>",
+      "item_text": "类目路径: 游戏 > 吃鸡游戏\n标题/描述: 轰炸机已就位?\n封面文字: 蝴蝶效应终极版\n补充主题标签: PUBG五周年 / 游戏中的名场面"
+    },
+    {
+      "position": 5,
+      "video_id": 2141254,
+      "category_path": "游戏 > 多人在线战术竞技游戏(MOBA)",
+      "semantic_id": "<SID_0_77> <SID_1_141> <SID_2_9>",
+      "item_text": "类目路径: 游戏 > 多人在线战术竞技游戏(MOBA)\n标题/描述: 伽罗是个很强势的射手,快拿着这套出装去上分吧!\n补充主题标签: 王者荣耀 / 伽罗"
+    },
+    {
+      "position": 6,
+      "video_id": 3414954,
+      "category_path": "游戏 > 多人在线战术竞技游戏(MOBA)",
+      "semantic_id": "<SID_0_237> <SID_1_235> <SID_2_66>",
+      "item_text": "类目路径: 游戏 > 多人在线战术竞技游戏(MOBA)\n标题/描述: 关于陪男朋友上网发生的那点事\n补充主题标签: 又菜又爱玩 / 键盘侠"
+    },
+    {
+      "position": 7,
+      "video_id": 3125109,
+      "category_path": "汽车 > 汽车日常",
+      "semantic_id": "<SID_0_176> <SID_1_221> <SID_2_181>",
+      "item_text": "类目路径: 汽车 > 汽车日常\n标题/描述: 哪个才是真车神\n补充主题标签: 车神"
+    },
+    {
+      "position": 8,
+      "video_id": 4326082,
+      "category_path": "汽车 > 用车",
+      "semantic_id": "<SID_0_255> <SID_1_231> <SID_2_180>",
+      "item_text": "类目路径: 汽车 > 用车 > 用车知识\n标题/描述: 90%的人不知道这个汽车自带的隐藏冰箱!\n补充主题标签: 快说车 / 我给老铁讲汽车知识 / 辛苦了汽车人"
+    },
+    {
+      "position": 9,
+      "video_id": 3377868,
+      "category_path": "汽车 > 玩车",
+      "semantic_id": "<SID_0_62> <SID_1_253> <SID_2_111>",
+      "item_text": "类目路径: 汽车 > 玩车\n标题/描述: 胆子真大,我要是拿他手机跑了,他应该追不上吧?\n补充主题标签: 机车 / 摩托车 / 女骑"
+    },
+    {
+      "position": 10,
+      "video_id": 2047216,
+      "category_path": "美食 > 美食日常",
+      "semantic_id": "<SID_0_88> <SID_1_106> <SID_2_87>",
+      "item_text": "类目路径: 美食 > 美食日常\n标题/描述: 厉害了!这个手工饼啥操作?\n补充主题标签: 手工饼 / 大饼"
+    }
+  ],
+  "candidate_item": {
+    "video_id": 25,
+    "category_path": "游戏 > 多人在线战术竞技游戏(MOBA)",
+    "semantic_id": "<SID_0_172> <SID_1_72> <SID_2_174>",
+    "item_text": "类目路径: 游戏 > 多人在线战术竞技游戏(MOBA)\n标题/描述: 峡谷回合制,女枪vs大嘴,谁厉害\n封面文字: 峡谷回合制 女枪 vs 大嘴"
+  },
+  "instruction": "请判断候选视频是否适合推荐给该用户，并给出简洁、具体、基于历史行为的推荐理由。不要直接复述 Semantic ID token。"
+}
