@@ -1,7 +1,7 @@
 {
-  "task": "candidate_recommendation_explanation",
+  "task": "dpo_choice_recommendation",
   "language": "zh",
-  "note": "This example uses real public KuaiRand-27K item records, but the sequence itself is synthetic and does not correspond to a released user trajectory.",
+  "note": "This example uses real public KuaiRand-27K item records, but the sequence itself is synthetic and does not correspond to a released user trajectory. It mirrors the DPO-style prompt shape: recent positive history plus candidate A/B.",
   "user_history": [
     {
       "position": 1,
@@ -74,11 +74,17 @@
       "item_text": "类目路径: 美食 > 美食日常\n标题/描述: 厉害了!这个手工饼啥操作?\n补充主题标签: 手工饼 / 大饼"
     }
   ],
-  "candidate_item": {
+  "candidate_a": {
     "video_id": 25,
     "category_path": "游戏 > 多人在线战术竞技游戏(MOBA)",
     "semantic_id": "<SID_0_172> <SID_1_72> <SID_2_174>",
     "item_text": "类目路径: 游戏 > 多人在线战术竞技游戏(MOBA)\n标题/描述: 峡谷回合制,女枪vs大嘴,谁厉害\n封面文字: 峡谷回合制 女枪 vs 大嘴"
   },
-  "instruction": "请判断候选视频是否适合推荐给该用户，并给出简洁、具体、基于历史行为的推荐理由。不要直接复述 Semantic ID token。"
+  "candidate_b": {
+    "video_id": 1627868,
+    "category_path": "美食 > 美食日常",
+    "semantic_id": "<SID_0_248> <SID_1_109> <SID_2_186>",
+    "item_text": "类目路径: 美食 > 美食日常\n标题/描述: 冻坏的奶油有救了!再也不要扔,做成黄油省下一个亿!超级简单!!\n补充主题标签: 黄油 / 奶油 / 跟着快手学做菜"
+  },
+  "instruction": "请从候选A和候选B中选择更适合推荐给用户的视频，并给出简洁、真实、有依据的理由。不要直接复述 Semantic ID token。"
 }

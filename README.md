@@ -56,7 +56,7 @@ See [docs/evaluation.md](docs/evaluation.md) for the evaluation summary.
 
 ## Examples
 
-The [examples](examples) directory contains two small public KuaiRand-27K item records selected from the high-frequency item universe, plus short and long prompt/output illustrations. These examples are meant to show input shape and response style only; they are not released training records, teacher judge outputs, or evaluation samples.
+The [examples](examples) directory contains two small public KuaiRand-27K item records selected from the high-frequency item universe, plus short SFT-style and long DPO-style prompt/output illustrations. These examples are meant to show input shape and response style only; they are not released training records, teacher judge outputs, or evaluation samples.
 
 ## Why Only A Landing Repo?
 
