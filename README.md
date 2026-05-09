@@ -2,14 +2,20 @@
 
 Lightweight LLM distillation and preference alignment for recommendation-scene explanation on KuaiRand-27K.
 
-This repository is a **landing page** for the released adapter and project summary. It intentionally does not include raw data, teacher API outputs, training scripts, RQ-VAE weights, or full training logs.
+This repository is a **landing page** for the released adapter and project summary.
+
+## Repository Layout
+
+- GitHub repository: project overview, method notes, and evaluation summary.
+- Hugging Face repository: released LoRA adapter, tokenizer files, and model card.
+- Not distributed on GitHub: model weights, training data, teacher outputs, logs, intermediate embeddings, RQ-VAE weights, or full training artifacts.
 
 ## Model
 
 - Base model: `Qwen/Qwen3.5-9B`
 - Released artifact: LoRA adapter
 - Recommended adapter: teacher-judged student-aware DPO checkpoint
-- Hugging Face: `https://huggingface.co/plumliu/qwen35-9b-kuairand-recexplain-lora`
+- Hugging Face: [plumliu/qwen35-9b-kuairand-recexplain-lora](https://huggingface.co/plumliu/qwen35-9b-kuairand-recexplain-lora)
 
 ## What This Model Does
 
