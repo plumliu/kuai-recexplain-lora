@@ -9,7 +9,8 @@ This repository is a **landing page** for the released adapter, derived post-tra
 - GitHub repository: project overview, method notes, examples, and evaluation summary.
 - Hugging Face model repository: released LoRA adapter, tokenizer files, and model card.
 - Hugging Face dataset repository: final derived SFT / DPO post-training JSONL files and compact evaluation summaries.
-- Not distributed: KuaiRand raw logs, teacher raw API outputs, candidate generation caches, full judge logs, intermediate embeddings, RQ-VAE weights, or full training artifacts.
+- Hugging Face RQ-VAE repository: Semantic ID RQ-VAE checkpoint and compact health-check summaries.
+- Not distributed: KuaiRand raw logs, teacher raw API outputs, candidate generation caches, full judge logs, or full training artifacts.
 
 ## Model
 
@@ -21,8 +22,14 @@ This repository is a **landing page** for the released adapter, derived post-tra
 ## Dataset
 
 - Released artifact: derived SFT / DPO post-training data
-- Contents: SFT train/eval, warm-start DPO train/eval, student-aware DPO train/eval, selected student-aware pairs, and compact evaluation summaries
+- Contents: SFT train/eval, warm-start DPO train/eval, student-aware DPO train/eval, selected student-aware pairs, Semantic ID assets, and compact evaluation summaries
 - Hugging Face: [plumliu/kuairand-recexplain-sft-dpo-data](https://huggingface.co/datasets/plumliu/kuairand-recexplain-sft-dpo-data)
+
+## Semantic ID RQ-VAE
+
+- Released artifact: three-level RQ-VAE checkpoint for KuaiRand-27K item Semantic ID construction
+- Related data: generated SID mapping, hybrid embeddings, and rewritten user sequences are in the dataset repository
+- Hugging Face: [plumliu/kuairand-semantic-id-rqvae](https://huggingface.co/plumliu/kuairand-semantic-id-rqvae)
 
 ## What This Model Does
 
@@ -67,14 +74,14 @@ The [examples](examples) directory contains two small public KuaiRand-27K item r
 
 ## Why Only A Landing Repo?
 
-The full training workflow depends on large KuaiRand artifacts, teacher API outputs, intermediate embeddings, LoRA checkpoints, and AutoDL run logs. The GitHub repository intentionally stays small and navigates to the two Hugging Face artifacts instead of storing large files directly.
+The full training workflow depends on large KuaiRand artifacts, teacher API outputs, intermediate embeddings, LoRA checkpoints, and AutoDL run logs. The GitHub repository intentionally stays small and navigates to the Hugging Face artifacts instead of storing large files directly.
 
 This repository keeps the public surface focused:
 
 - Project motivation.
 - High-level method.
 - Evaluation results.
-- Links to the Hugging Face adapter and derived dataset.
+- Links to the Hugging Face adapter, derived dataset, and RQ-VAE checkpoint.
 
 ## Citation
 
