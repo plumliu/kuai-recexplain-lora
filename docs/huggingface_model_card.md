@@ -36,7 +36,9 @@ The adapter was trained with:
 - Warm-start DPO over hard/medium/random negative preference pairs.
 - Teacher-judged student-aware DPO over sampled student responses.
 
-The final released adapter corresponds to the student-aware DPO model selected by held-out generation and preference-ranking evaluation.
+The final released adapter corresponds to the student-aware DPO checkpoint-600 selected by held-out generation and preference-ranking evaluation.
+
+The derived SFT / DPO post-training data is released separately at [`plumliu/kuairand-recexplain-sft-dpo-data`](https://huggingface.co/datasets/plumliu/kuairand-recexplain-sft-dpo-data).
 
 ## Evaluation
 
@@ -67,5 +69,5 @@ model = PeftModel.from_pretrained(model, adapter)
 ## Limitations
 
 - The adapter is domain-specific and optimized for recommendation explanation prompts.
-- It does not include raw training data, teacher API outputs, or item-level Semantic ID mappings.
+- The model repository does not include training data, teacher API outputs, or item-level Semantic ID mappings.
 - Output quality depends on prompt format and the availability of grounded item/user context.

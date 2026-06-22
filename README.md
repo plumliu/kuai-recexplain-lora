@@ -2,20 +2,27 @@
 
 Lightweight LLM distillation and preference alignment for recommendation-scene explanation on KuaiRand-27K.
 
-This repository is a **landing page** for the released adapter and project summary.
+This repository is a **landing page** for the released adapter, derived post-training dataset, and project summary.
 
 ## Repository Layout
 
-- GitHub repository: project overview, method notes, and evaluation summary.
-- Hugging Face repository: released LoRA adapter, tokenizer files, and model card.
-- Not distributed on GitHub: model weights, training data, teacher outputs, logs, intermediate embeddings, RQ-VAE weights, or full training artifacts.
+- GitHub repository: project overview, method notes, examples, and evaluation summary.
+- Hugging Face model repository: released LoRA adapter, tokenizer files, and model card.
+- Hugging Face dataset repository: final derived SFT / DPO post-training JSONL files and compact evaluation summaries.
+- Not distributed: KuaiRand raw logs, teacher raw API outputs, candidate generation caches, full judge logs, intermediate embeddings, RQ-VAE weights, or full training artifacts.
 
 ## Model
 
 - Base model: `Qwen/Qwen3.5-9B`
 - Released artifact: LoRA adapter
-- Recommended adapter: teacher-judged student-aware DPO checkpoint
+- Recommended adapter: teacher-judged student-aware DPO checkpoint-600
 - Hugging Face: [plumliu/qwen35-9b-kuairand-recexplain-lora](https://huggingface.co/plumliu/qwen35-9b-kuairand-recexplain-lora)
+
+## Dataset
+
+- Released artifact: derived SFT / DPO post-training data
+- Contents: SFT train/eval, warm-start DPO train/eval, student-aware DPO train/eval, selected student-aware pairs, and compact evaluation summaries
+- Hugging Face: [plumliu/kuairand-recexplain-sft-dpo-data](https://huggingface.co/datasets/plumliu/kuairand-recexplain-sft-dpo-data)
 
 ## What This Model Does
 
@@ -60,15 +67,15 @@ The [examples](examples) directory contains two small public KuaiRand-27K item r
 
 ## Why Only A Landing Repo?
 
-The full training workflow depends on large KuaiRand artifacts, teacher API outputs, intermediate embeddings, LoRA checkpoints, and AutoDL run logs. Those artifacts are not redistributed here.
+The full training workflow depends on large KuaiRand artifacts, teacher API outputs, intermediate embeddings, LoRA checkpoints, and AutoDL run logs. The GitHub repository intentionally stays small and navigates to the two Hugging Face artifacts instead of storing large files directly.
 
 This repository keeps the public surface focused:
 
 - Project motivation.
 - High-level method.
 - Evaluation results.
-- Link to the Hugging Face adapter.
+- Links to the Hugging Face adapter and derived dataset.
 
 ## Citation
 
-If this project is useful, please cite the adapter repository and the KuaiRand dataset.
+If this project is useful, please cite the adapter repository, dataset repository, and the KuaiRand dataset.

@@ -31,13 +31,17 @@ The adapter is trained in three stages:
 
 The student-aware stage is the key alignment step because it targets errors the student model actually makes, rather than only teacher-constructed obvious negatives.
 
-## Released Artifact
+## Released Artifacts
 
-The public artifact is a LoRA adapter for `Qwen/Qwen3.5-9B`. The repository does not publish:
+The public model artifact is a LoRA adapter for `Qwen/Qwen3.5-9B`, hosted at [`plumliu/qwen35-9b-kuairand-recexplain-lora`](https://huggingface.co/plumliu/qwen35-9b-kuairand-recexplain-lora). The released adapter corresponds to the teacher-judged student-aware DPO checkpoint-600.
+
+The public dataset artifact is hosted at [`plumliu/kuairand-recexplain-sft-dpo-data`](https://huggingface.co/datasets/plumliu/kuairand-recexplain-sft-dpo-data). It contains the final derived SFT / DPO post-training JSONL files and compact evaluation summaries.
+
+The release still does not publish:
 
 - Raw KuaiRand data.
 - Teacher API request/response logs.
-- SFT/DPO training data.
+- Student candidate generation caches.
+- Full teacher judge logs.
 - RQ-VAE checkpoint or item-level Semantic ID mapping.
 - Full training scripts or AutoDL logs.
-
